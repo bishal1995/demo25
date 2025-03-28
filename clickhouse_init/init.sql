@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS default.taxi_trips (
+    `VendorID` Int32,
+    `tpep_pickup_datetime` Nullable(DateTime64(3)),
+    `tpep_dropoff_datetime` Nullable(DateTime64(3)),
+    `passenger_count` Nullable(Int64),
+    `trip_distance` Nullable(Float64),
+    `RatecodeID` Nullable(Int64),
+    `store_and_fwd_flag` Nullable(String),
+    `PULocationID` Nullable(Int32),
+    `DOLocationID` Nullable(Int32),
+    `payment_type` Nullable(Int64),
+    `fare_amount` Nullable(Float64),
+    `extra` Nullable(Float64),
+    `mta_tax` Nullable(Float64),
+    `tip_amount` Nullable(Float64),
+    `tolls_amount` Nullable(Float64),
+    `improvement_surcharge` Nullable(Float64),
+    `total_amount` Nullable(Float64),
+    `congestion_surcharge` Nullable(Float64),
+    `Airport_fee` Nullable(Float64),
+    `PickupZone` Nullable(String),
+    `DropZone` Nullable(String),
+    `trip_duration_in_sec` Nullable(Int64),
+    `hour_of_day` Nullable(Int32)
+) ENGINE = MergeTree()
+order by VendorID;
