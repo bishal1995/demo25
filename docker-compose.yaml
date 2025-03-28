@@ -344,7 +344,7 @@ services:
     image: spoonest/clickhouse-tabix-web-client:latest
     container_name: tabix
     ports:
-      - "8081:80"  # Tabix UI on http://localhost:8081
+      - "8082:80"  # Tabix UI on http://localhost:8081
     depends_on:
       - clickhouse
     networks:
