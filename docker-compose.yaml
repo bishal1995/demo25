@@ -102,6 +102,8 @@ services:
       retries: 5
       start_period: 5s
     restart: always
+    networks:
+      - spark-net
 
   redis:
     # Redis is limited to 7.2-bookworm due to licencing change
@@ -116,6 +118,8 @@ services:
       retries: 50
       start_period: 30s
     restart: always
+    networks:
+      - spark-net
 
   airflow-webserver:
     <<: *airflow-common
@@ -133,6 +137,8 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+    networks:
+      - spark-net
 
   airflow-scheduler:
     <<: *airflow-common
@@ -148,6 +154,8 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+    networks:
+      - spark-net
 
   airflow-worker:
     <<: *airflow-common
@@ -171,6 +179,8 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+    networks:
+      - spark-net
 
   airflow-triggerer:
     <<: *airflow-common
@@ -186,6 +196,8 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+    networks:
+      - spark-net
 
   airflow-init:
     <<: *airflow-common
@@ -250,41 +262,8 @@ services:
     user: "0:0"
     volumes:
       - ${AIRFLOW_PROJ_DIR:-.}:/sources
-
-  airflow-cli:
-    <<: *airflow-common
-    profiles:
-      - debug
-    environment:
-      <<: *airflow-common-env
-      CONNECTION_CHECK_MAX_COUNT: "0"
-    # Workaround for entrypoint issue. See: https://github.com/apache/airflow/issues/16252
-    command:
-      - bash
-      - -c
-      - airflow
-
-  # You can enable flower by adding "--profile flower" option e.g. docker-compose --profile flower up
-  # or by explicitly targeted on the command line e.g. docker-compose up flower.
-  # See: https://docs.docker.com/compose/profiles/
-  flower:
-    <<: *airflow-common
-    command: celery flower
-    profiles:
-      - flower
-    ports:
-      - "5555:5555"
-    healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:5555/"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-      start_period: 30s
-    restart: always
-    depends_on:
-      <<: *airflow-common-depends-on
-      airflow-init:
-        condition: service_completed_successfully
+    networks:
+      - spark-net
 
   # Spark Master
   spark-master:
@@ -306,6 +285,8 @@ services:
       timeout: 10s
       retries: 5
     restart: always
+    networks:
+      - spark-net
 
   # Spark Worker
   spark-worker:
@@ -324,6 +305,55 @@ services:
     depends_on:
       - spark-master
     restart: always
+    networks:
+      - spark-net
+
+  rill_dash:
+    build:
+      context: .
+      dockerfile: Dockerfile.rill
+    ports:
+      - 8088:9009
+    volumes:
+      - ./rill_data:/home/ubuntu/rill_project
+    networks:
+      - spark-net
+    depends_on:
+      - clickhouse
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest
+    container_name: clickhouse
+    ports:
+      - "8123:8123"  # HTTP Interface
+      - "9000:9000"  # Native Interface
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+    environment:
+      - CLICKHOUSE_USER=admin
+      - CLICKHOUSE_PASSWORD=password
+    volumes:
+      - ./clickhouse_data:/var/lib/clickhouse
+      - ./clickhouse_init:/docker-entrypoint-initdb.d
+    networks:
+      - spark-net
+
+  tabix:
+    image: spoonest/clickhouse-tabix-web-client:latest
+    container_name: tabix
+    ports:
+      - "8081:80"  # Tabix UI on http://localhost:8081
+    depends_on:
+      - clickhouse
+    networks:
+      - spark-net
 
 volumes:
   postgres-db-volume:
+  clickhouse_data:
+
+networks:
+  spark-net:
+    driver: bridge
