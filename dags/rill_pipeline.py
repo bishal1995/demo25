@@ -38,4 +38,4 @@ spark_submit_task = SparkSubmitOperator(
 )
 
 # Set the task execution order
-spark_task
+spark_submit_task
