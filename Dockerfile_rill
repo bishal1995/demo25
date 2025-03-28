@@ -1,0 +1,46 @@
+FROM ubuntu:25.04
+
+# Set TERM to avoid tput error
+ENV TERM=xterm
+
+# Install required dependencies
+RUN apt-get update && apt-get install -y \
+    ca-certificates \
+    curl \
+    libdigest-sha-perl \
+    unzip
+
+# Set working directory
+WORKDIR /home/ubuntu
+
+# Copy and execute the installation script
+COPY download_rill.sh ./
+RUN chmod +x download_rill.sh && ./download_rill.sh --non-interactive
+
+# Move the `rill` binary to a global path
+RUN mv rill /usr/local/bin/rill && chmod +x /usr/local/bin/rill
+
+# Create a group and user for rill
+RUN groupadd -g 1001 rill && \
+    useradd -m -u 1001 -s /bin/sh -g rill rill
+
+# Create the project directory and set permissions
+RUN mkdir -p /home/ubuntu/rill_project && \
+    chown -R rill:rill /home/ubuntu/rill_project
+
+# Switch to the non-root user
+USER rill
+
+# Set working directory inside the container
+WORKDIR /home/ubuntu/rill_project
+
+# Install DuckDB extensions before running
+RUN rill runtime install-duckdb-extensions
+
+# Expose the application port
+EXPOSE 9009
+
+# Start the rill server
+ENTRYPOINT ["rill"]
+CMD ["start", "/home/ubuntu/rill_project"]
+

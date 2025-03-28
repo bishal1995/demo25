@@ -1,0 +1,316 @@
+[2025-03-28T07:14:22.745+0000] {processor.py:186} INFO - Started process (PID=42) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:14:22.745+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:14:22.748+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:14:22.747+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:14:22.754+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:14:22.751+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/rill_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/rill_pipeline.py", line 3, in <module>
+    from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache'
+[2025-03-28T07:14:22.755+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:14:22.782+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.045 seconds
+[2025-03-28T07:14:52.939+0000] {processor.py:186} INFO - Started process (PID=49) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:14:52.948+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:14:52.950+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:14:52.950+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:14:52.955+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:14:52.953+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/rill_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/rill_pipeline.py", line 3, in <module>
+    from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache'
+[2025-03-28T07:14:52.955+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:14:52.983+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.049 seconds
+[2025-03-28T07:15:23.127+0000] {processor.py:186} INFO - Started process (PID=56) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:15:23.127+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:15:23.129+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:15:23.129+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:15:23.132+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:15:23.131+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/rill_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/rill_pipeline.py", line 3, in <module>
+    from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache'
+[2025-03-28T07:15:23.132+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:15:23.155+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.033 seconds
+[2025-03-28T07:15:53.323+0000] {processor.py:186} INFO - Started process (PID=63) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:15:53.323+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:15:53.325+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:15:53.325+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:15:53.328+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:15:53.327+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/rill_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/rill_pipeline.py", line 3, in <module>
+    from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache'
+[2025-03-28T07:15:53.329+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:15:53.351+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.034 seconds
+[2025-03-28T07:16:23.504+0000] {processor.py:186} INFO - Started process (PID=70) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:16:23.504+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:16:23.506+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:16:23.506+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:16:23.509+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:16:23.508+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/rill_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/rill_pipeline.py", line 3, in <module>
+    from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache'
+[2025-03-28T07:16:23.510+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:16:23.532+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.033 seconds
+[2025-03-28T07:16:53.683+0000] {processor.py:186} INFO - Started process (PID=77) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:16:53.692+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:16:53.694+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:16:53.694+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:16:53.697+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:16:53.696+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/rill_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/rill_pipeline.py", line 3, in <module>
+    from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache'
+[2025-03-28T07:16:53.697+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:16:53.719+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.040 seconds
+[2025-03-28T07:28:00.348+0000] {processor.py:186} INFO - Started process (PID=43) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:28:00.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:28:00.354+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:00.354+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:28:00.368+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:28:00.611+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:00.610+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:spark_nyc_taxi_dag
+[2025-03-28T07:28:00.619+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:00.618+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:spark_nyc_taxi_dag
+[2025-03-28T07:28:00.623+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:00.623+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:spark_nyc_taxi_dag
+[2025-03-28T07:28:00.629+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:00.628+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:spark_nyc_taxi_dag
+[2025-03-28T07:28:00.634+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:00.634+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:spark_nyc_taxi_dag
+[2025-03-28T07:28:00.640+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:00.639+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:spark_nyc_taxi_dag
+[2025-03-28T07:28:00.646+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:00.645+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:spark_nyc_taxi_dag
+[2025-03-28T07:28:00.646+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:00.646+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:28:00.660+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:00.659+0000] {dag.py:3262} INFO - Creating ORM DAG for spark_nyc_taxi_dag
+[2025-03-28T07:28:00.660+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:00.660+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:28:00.673+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.329 seconds
+[2025-03-28T07:28:30.844+0000] {processor.py:186} INFO - Started process (PID=50) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:28:30.845+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:28:30.847+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:30.847+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:28:30.860+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:28:30.889+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:30.888+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:28:30.902+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:28:30.902+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:28:30.918+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.082 seconds
+[2025-03-28T07:29:01.001+0000] {processor.py:186} INFO - Started process (PID=57) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:29:01.010+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:29:01.013+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:29:01.012+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:29:01.022+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:29:01.043+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:29:01.043+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:29:01.056+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:29:01.056+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:29:01.069+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.072 seconds
+[2025-03-28T07:29:31.224+0000] {processor.py:186} INFO - Started process (PID=64) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:29:31.233+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:29:31.235+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:29:31.235+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:29:31.244+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:29:31.264+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:29:31.264+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:29:31.276+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:29:31.276+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:29:31.290+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.070 seconds
+[2025-03-28T07:30:01.407+0000] {processor.py:186} INFO - Started process (PID=71) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:30:01.408+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:30:01.410+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:30:01.410+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:30:01.422+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:30:01.445+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:30:01.444+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:30:01.456+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:30:01.456+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:30:01.468+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.066 seconds
+[2025-03-28T07:30:31.624+0000] {processor.py:186} INFO - Started process (PID=78) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:30:31.625+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:30:31.627+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:30:31.627+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:30:31.634+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:30:31.657+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:30:31.656+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:30:31.668+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:30:31.668+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:30:31.681+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.063 seconds
+[2025-03-28T07:31:01.791+0000] {processor.py:186} INFO - Started process (PID=85) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:31:01.799+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:31:01.802+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:31:01.802+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:31:01.808+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:31:01.828+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:31:01.828+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:31:01.840+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:31:01.839+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:31:01.861+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.076 seconds
+[2025-03-28T07:31:31.990+0000] {processor.py:186} INFO - Started process (PID=92) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:31:31.991+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:31:31.993+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:31:31.992+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:31:31.999+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:31:32.019+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:31:32.019+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:31:32.030+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:31:32.030+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:31:32.043+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.057 seconds
+[2025-03-28T07:32:02.194+0000] {processor.py:186} INFO - Started process (PID=99) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:32:02.203+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:32:02.205+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:32:02.204+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:32:02.212+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:32:02.235+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:32:02.235+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:32:02.248+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:32:02.248+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:32:02.276+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.087 seconds
+[2025-03-28T07:32:32.370+0000] {processor.py:186} INFO - Started process (PID=106) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:32:32.370+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:32:32.372+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:32:32.372+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:32:32.378+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:32:32.401+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:32:32.401+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:32:32.413+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:32:32.412+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:32:32.428+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.063 seconds
+[2025-03-28T07:33:02.565+0000] {processor.py:186} INFO - Started process (PID=113) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:33:02.574+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:33:02.576+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:33:02.576+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:33:02.584+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:33:02.608+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:33:02.607+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:33:02.620+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:33:02.619+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:33:02.634+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.075 seconds
+[2025-03-28T07:33:32.756+0000] {processor.py:186} INFO - Started process (PID=120) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:33:32.765+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:33:32.767+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:33:32.767+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:33:32.774+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:33:32.796+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:33:32.796+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:33:32.807+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:33:32.807+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:33:32.818+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.067 seconds
+[2025-03-28T07:34:02.994+0000] {processor.py:186} INFO - Started process (PID=127) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:34:03.002+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:34:03.005+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:34:03.005+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:34:03.012+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:34:03.035+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:34:03.035+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:34:03.047+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:34:03.046+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:34:03.060+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.071 seconds
+[2025-03-28T07:34:33.189+0000] {processor.py:186} INFO - Started process (PID=134) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:34:33.199+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:34:33.201+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:34:33.201+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:34:33.208+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:34:33.232+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:34:33.232+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:34:33.244+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:34:33.244+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:34:33.257+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.073 seconds
+[2025-03-28T07:35:03.425+0000] {processor.py:186} INFO - Started process (PID=141) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:35:03.434+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:35:03.436+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:35:03.436+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:35:03.444+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:35:03.468+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:35:03.468+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:35:03.480+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:35:03.480+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:35:03.493+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.074 seconds
+[2025-03-28T07:35:33.580+0000] {processor.py:186} INFO - Started process (PID=148) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:35:33.589+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:35:33.592+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:35:33.592+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:35:33.600+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:35:33.621+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:35:33.621+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:35:33.633+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:35:33.633+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:35:33.647+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.071 seconds
+[2025-03-28T07:36:03.820+0000] {processor.py:186} INFO - Started process (PID=155) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:36:03.829+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:36:03.832+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:36:03.832+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:36:03.839+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:36:03.862+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:36:03.862+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:36:03.874+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:36:03.874+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:36:03.887+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.072 seconds
+[2025-03-28T07:36:34.011+0000] {processor.py:186} INFO - Started process (PID=162) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:36:34.019+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:36:34.022+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:36:34.022+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:36:34.028+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:36:34.052+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:36:34.051+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:36:34.063+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:36:34.063+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:36:34.076+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.070 seconds
+[2025-03-28T07:37:04.241+0000] {processor.py:186} INFO - Started process (PID=169) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:37:04.250+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:37:04.253+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:37:04.253+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:37:04.260+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:37:04.283+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:37:04.282+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:37:04.294+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:37:04.294+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:37:04.306+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.071 seconds
+[2025-03-28T07:37:34.433+0000] {processor.py:186} INFO - Started process (PID=176) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:37:34.440+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:37:34.443+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:37:34.443+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:37:34.452+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:37:34.478+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:37:34.478+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:37:34.492+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:37:34.491+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:37:34.508+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.082 seconds
+[2025-03-28T07:38:04.662+0000] {processor.py:186} INFO - Started process (PID=183) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:38:04.663+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:38:04.665+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:38:04.664+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:38:04.672+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:38:04.694+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:38:04.694+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:38:04.705+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:38:04.705+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:38:04.717+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.059 seconds
+[2025-03-28T07:38:34.855+0000] {processor.py:186} INFO - Started process (PID=190) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:38:34.864+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:38:34.866+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:38:34.866+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:38:34.873+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:38:34.896+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:38:34.895+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:38:34.907+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:38:34.907+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:38:34.919+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.069 seconds
+[2025-03-28T07:39:05.040+0000] {processor.py:186} INFO - Started process (PID=197) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:39:05.049+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:39:05.051+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:39:05.051+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:39:05.057+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:39:05.079+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:39:05.079+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:39:05.089+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:39:05.089+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:39:05.105+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.069 seconds
+[2025-03-28T07:39:35.238+0000] {processor.py:186} INFO - Started process (PID=204) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:39:35.246+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:39:35.249+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:39:35.249+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:39:35.257+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:39:35.280+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:39:35.280+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:39:35.291+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:39:35.291+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:39:35.303+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.071 seconds
+[2025-03-28T07:40:05.427+0000] {processor.py:186} INFO - Started process (PID=211) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:40:05.428+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:40:05.429+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:40:05.429+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:40:05.435+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:40:05.455+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:40:05.455+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:40:05.465+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:40:05.465+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:40:05.477+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.055 seconds
+[2025-03-28T07:40:35.633+0000] {processor.py:186} INFO - Started process (PID=218) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:40:35.641+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:40:35.644+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:40:35.643+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:40:35.650+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:40:35.673+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:40:35.673+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:40:35.686+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:40:35.686+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:40:35.699+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.071 seconds
+[2025-03-28T07:41:05.827+0000] {processor.py:186} INFO - Started process (PID=225) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:41:05.836+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:41:05.839+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:41:05.838+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:41:05.846+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:41:05.869+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:41:05.869+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:41:05.880+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:41:05.880+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:41:05.894+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.073 seconds
+[2025-03-28T07:41:36.055+0000] {processor.py:186} INFO - Started process (PID=232) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:41:36.064+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:41:36.066+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:41:36.066+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:41:36.072+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:41:36.096+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:41:36.096+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:41:36.108+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:41:36.108+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:41:36.120+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.070 seconds
+[2025-03-28T07:42:06.243+0000] {processor.py:186} INFO - Started process (PID=239) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:42:06.252+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:42:06.255+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:42:06.255+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:42:06.262+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:42:06.286+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:42:06.286+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:42:06.297+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:42:06.297+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:42:06.309+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.072 seconds
+[2025-03-28T07:42:36.455+0000] {processor.py:186} INFO - Started process (PID=246) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:42:36.464+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:42:36.466+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:42:36.465+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:42:36.472+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:42:36.496+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:42:36.496+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:42:36.509+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:42:36.509+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:42:36.522+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.071 seconds
+[2025-03-28T07:43:06.632+0000] {processor.py:186} INFO - Started process (PID=253) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:43:06.633+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:43:06.635+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:43:06.634+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:43:06.642+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:43:06.665+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:43:06.665+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:43:06.677+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:43:06.677+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:43:06.689+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.062 seconds
+[2025-03-28T07:43:36.859+0000] {processor.py:186} INFO - Started process (PID=260) to work on /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:43:36.868+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/rill_pipeline.py for tasks to queue
+[2025-03-28T07:43:36.871+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:43:36.871+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:43:36.878+0000] {processor.py:925} INFO - DAG(s) 'spark_nyc_taxi_dag' retrieved from /opt/airflow/dags/rill_pipeline.py
+[2025-03-28T07:43:36.902+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:43:36.902+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-28T07:43:36.914+0000] {logging_mixin.py:190} INFO - [2025-03-28T07:43:36.914+0000] {dag.py:4180} INFO - Setting next_dagrun for spark_nyc_taxi_dag to None, run_after=None
+[2025-03-28T07:43:36.927+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/rill_pipeline.py took 0.074 seconds
