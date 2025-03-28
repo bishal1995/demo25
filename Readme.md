@@ -1,1 +1,1 @@
-spark-submit --master spark://spark-master:7077 --num-executors 2 --executor-cores 2 --executor-memory 2g --driver-memory 2g --name arrow-spark --py-files /opt/airflow/dags/zips/spark_jobs.zip /opt/airflow/dags/zips/spark_jobs/jobs/rill_clickhouse.py
+
