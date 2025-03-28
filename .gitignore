@@ -1,2 +1,4 @@
 *.zip
 logs/
+dags/__pycache__
+zips/*
